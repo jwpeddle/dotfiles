@@ -1,0 +1,27 @@
+[global_config]
+  geometry_hinting = False
+  title_hide_sizetext = True
+  borderless = True
+  handle_size = 0
+  tab_position = hidden
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    background_darkness = 0.82
+    background_type = transparent
+    scrollbar_position = hidden
+    foreground_color = "#ffffff"
+    icon_bell = False
+    show_titlebar = False
+    font = Inconsolata Medium 14
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
