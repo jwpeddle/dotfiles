@@ -1,0 +1,8 @@
+[core]
+[user]
+	name = Jason Peddle
+	email = jwpeddle@gmail.com
+[color]
+	ui = auto
+[push]
+	default = upstream

@@ -1,0 +1,8 @@
+--ignore-dir=CACHE
+--ignore-dir=fonts
+--ignore-dir=migrations
+--type-set
+sass=.sass
+--type-set
+coffee=.coffee
+
