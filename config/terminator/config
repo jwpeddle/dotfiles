@@ -14,7 +14,7 @@
     foreground_color = "#ffffff"
     icon_bell = False
     show_titlebar = False
-    font = Inconsolata Medium 14
+    font = Inconsolata Medium 12
     scrollback_infinite = True
 [layouts]
   [[default]]
