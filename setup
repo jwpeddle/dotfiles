@@ -1,10 +1,10 @@
-rm ~/.ackrc && ln -s ~/dotfiles/ackrc ~/.ackrc
-rm ~/.bash_aliases && ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
-rm ~/.bash_colors && ln -s ~/dotfiles/bash_colors ~/.bash_colors
-rm ~/.bash_profile && ln -s ~/dotfiles/bash_profile ~/.bash_profile
-rm ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
-rm ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
-rm ~/.xbindkeysrc && ln -s ~/dotfiles/xbindkeysrc ~/.xbindkeysrc
-rm ~/.xinitrc && ln -s ~/dotfiles/xinitrc ~/.xinitrc
-rm ~/.i3status.conf && ln -s ~/dotfiles/i3status.conf ~/.i3status.conf
+rm -rf ~/.ackrc && ln -s ~/dotfiles/ackrc ~/.ackrc
+rm -rf ~/.bash_aliases && ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
+rm -rf ~/.bash_colors && ln -s ~/dotfiles/bash_colors ~/.bash_colors
+rm -rf ~/.bash_profile && ln -s ~/dotfiles/bash_profile ~/.bash_profile
+rm -rf ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
+rm -rf ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
+rm -rf ~/.xbindkeysrc && ln -s ~/dotfiles/xbindkeysrc ~/.xbindkeysrc
+rm -rf ~/.xinitrc && ln -s ~/dotfiles/xinitrc ~/.xinitrc
+rm -rf ~/.i3status.conf && ln -s ~/dotfiles/i3status.conf ~/.i3status.conf
 rm -rf ~/.i3 && ln -s ~/dotfiles/i3 ~/.i3
