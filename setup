@@ -5,5 +5,6 @@ rm ~/.bash_profile && ln -s ~/dotfiles/bash_profile ~/.bash_profile
 rm ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
 rm ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
 rm ~/.xbindkeysrc && ln -s ~/dotfiles/xbindkeysrc ~/.xbindkeysrc
+rm ~/.xinitrc && ln -s ~/dotfiles/xinitrc ~/.xinitrc
 rm ~/.i3status.conf && ln -s ~/dotfiles/i3status.conf ~/.i3status.conf
 rm -rf ~/.i3 && ln -s ~/dotfiles/i3 ~/.i3
