@@ -40,4 +40,6 @@ export PYTHONSTARTUP=~/.pystartup
 
 . /usr/bin/virtualenvwrapper.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -f ~/.autojump/etc/profile.d/autojump.bash ]] && source ~/.autojump/etc/profile.d/autojump.bash
+[[ -s /etc/profile.d/autojump.bash ]] && source /etc/profile.d/autojump.bash
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -17,7 +17,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+w kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec dmenu_run -fn 'Inconsolata Medium-8' -nf '#6699ff' -nb '#000000' -sf '#000000' -sb '#6699ff'
 
 # change focus
 bindsym $mod+h focus left
@@ -96,5 +96,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         position top
-        font xft:Inconsolata Medium 10
+        font xft:Inconsolata Medium 8
 }

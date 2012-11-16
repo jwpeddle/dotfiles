@@ -1,9 +1,3 @@
-URxvt.font: xft:Monaco:size=12
-URxvt.background: black
-URxvt.foreground: white
-URxvt.scrollBar: False
-URxvt.transparent: true
-URxvt.shading: 30
 Xft.dpi: 96
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintfull
@@ -11,6 +5,3 @@ Xft.hinting: true
 Xft.antialias: true
 Xft.rgba: rgb
 Xcursor.theme: Vanilla-DMZ
-dzen2.font: xft:Monaco:size=10
-dzen2.background: black
-dzen2.foreground: #DB3779
