@@ -1,6 +1,20 @@
+# case insenstive unless caps in search
+--smart-case
+
+# no regex
+-Q 
+
+# ignored dirs
 --ignore-dir=CACHE
+--ignore-dir=site-static
+--ignore-dir=media
+--ignore-dir=.sass-cache
 --ignore-dir=fonts
+--ignore-dir=lib
 --ignore-dir=migrations
+--ignore-dir=node_modules
+
+# add types
 --type-set
 sass=.sass
 --type-set

@@ -33,7 +33,7 @@ export HISTSIZE=
 export HISTFILE=~/.bash_history
 export HISTCONTROL=ignoredups
 export HISTIGNORE="ls:exit:history:ack:grep"
-shopt -s histappend autocd checkwinsize
+shopt -s globstar histappend autocd checkwinsize nocaseglob
 export PROMPT_COMMAND='history -a'
 
 export PYTHONSTARTUP=~/.pystartup
