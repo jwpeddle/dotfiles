@@ -18,7 +18,13 @@ export PAGER='/usr/bin/most -s'
 export EDITOR=vim
 
 # use chrominum as default browser
-export BROWSER=chromium
+if [ -n "$DISPLAY" ]; then
+    BROWSER=google-chrome
+else
+    BROWSER=elinks
+fi
+
+export TERM=xterm-256color
 
 # default terminal
 export TERMINAL=terminator
@@ -43,3 +49,5 @@ export PYTHONSTARTUP=~/.pystartup
 [[ -s /etc/profile.d/autojump.bash ]] && source /etc/profile.d/autojump.bash
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#export NODE_PATH=/usr/local/lib/node_modules/

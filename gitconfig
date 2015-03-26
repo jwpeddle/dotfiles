@@ -5,4 +5,17 @@
 [color]
 	ui = auto
 [push]
-	default = upstream
+	default = simple
+[core]
+	filemode = true
+[alias]
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+[merge]
+        ;conflictstyle = diff3

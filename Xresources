@@ -5,3 +5,4 @@ Xft.hinting: true
 Xft.antialias: true
 Xft.rgba: rgb
 Xcursor.theme: Vanilla-DMZ
+XTerm*metaSendsEscape: true
