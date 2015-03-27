@@ -44,7 +44,7 @@ export PROMPT_COMMAND='history -a'
 
 export PYTHONSTARTUP=~/.pystartup
 
-. /usr/bin/virtualenvwrapper.sh
+[[ -s /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 [[ -s /etc/profile.d/autojump.bash ]] && source /etc/profile.d/autojump.bash
 
