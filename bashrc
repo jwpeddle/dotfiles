@@ -17,9 +17,9 @@ export PAGER='/usr/bin/most -s'
 # use vim as default editor
 export EDITOR=vim
 
-# use chrominum as default browser
+# use chrome as default browser
 if [ -n "$DISPLAY" ]; then
-    BROWSER=google-chrome
+    BROWSER=chrome
 else
     BROWSER=elinks
 fi
@@ -28,6 +28,9 @@ export TERM=xterm-256color
 
 # default terminal
 export TERMINAL=terminator
+
+# set in /etc/locale.conf, but hyper fails to set properly
+LANG=en_CA.UTF-8
 
 # search up/down
 bind '"\e[A": history-search-backward'
@@ -43,11 +46,14 @@ shopt -s globstar histappend autocd checkwinsize nocaseglob
 export PROMPT_COMMAND='history -a'
 
 export PYTHONSTARTUP=~/.pystartup
+export PYTHONDONTWRITEBYTECODE=1
+export GOPATH=$HOME/dev/golang
+export ANDROID_HOME=$HOME/android-sdk
 
 [[ -s /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -s /etc/profile.d/autojump.bash ]] && source /etc/profile.d/autojump.bash
+[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
+[[ -s /home/jason/vmfarms/vmpass/vmpass.sh ]] && source /home/jason/vmfarms/vmpass/vmpass.sh
+nvm use --silent node
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-#export NODE_PATH=/usr/local/lib/node_modules/
+PATH=/home/jason/.local/bin:$PATH
+PATH=/home/jason/scripts:$PATH
