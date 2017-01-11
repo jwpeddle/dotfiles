@@ -30,11 +30,17 @@ include /usr/share/doc/task/rc/dark-gray-blue-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
 #default.command=project:todo next
-taskd.server=freecinc.com:53589
-taskd.certificate=\/home\/jason\/.task\/freecinc_a0d97961.cert.pem
-taskd.key=\/home\/jason\/.task\/freecinc_a0d97961.key.pem
-taskd.ca=\/home\/jason\/.task\/freecinc_a0d97961.ca.pem
-taskd.credentials=FreeCinc\/freecinc_a0d97961\/230f748c-62ee-471b-8a41-6a5952fbdd8a
+#taskd.server=freecinc.com:53589
+#taskd.certificate=\/home\/jason\/.task\/freecinc.cert.pem
+#taskd.key=\/home\/jason\/.task\/freecinc.key.pem
+#taskd.ca=\/home\/jason\/.task\/freecinc.ca.pem
+#taskd.credentials=FreeCinc\/freecinc_a0d97961\/230f748c-62ee-471b-8a41-6a5952fbdd8a
+taskd.certificate=\/home\/jason\/.task\/intheam.certificate.pem
+taskd.key=\/home\/jason\/.task\/intheam.key.pem
+taskd.ca=\/home\/jason\/.task\/intheam.ca.pem
+taskd.server=taskwarrior.inthe.am:53589
+taskd.credentials=inthe_am/jwpeddle/ed8c5f3f-f51c-4a9a-b670-72baa55a9c25
+taskd.trust=ignore hostname
 urgency.blocking.coefficient=0
 urgency.uda.priority.h.coefficient=6.0
 urgency.uda.priority.l.coefficient=-1
