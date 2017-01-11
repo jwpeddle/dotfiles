@@ -51,9 +51,11 @@ export GOPATH=$HOME/dev/golang
 export ANDROID_HOME=$HOME/android-sdk
 
 [[ -s /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
-[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
 [[ -s /home/jason/vmfarms/vmpass/vmpass.sh ]] && source /home/jason/vmfarms/vmpass/vmpass.sh
-nvm use --silent node
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh --no-use
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 PATH=/home/jason/.local/bin:$PATH
 PATH=/home/jason/scripts:$PATH
