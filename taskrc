@@ -46,3 +46,4 @@ urgency.uda.priority.H.coefficient=6.0
 urgency.uda.priority.L.coefficient=-1
 default.project=todo
 default.priority=M
+uda.priority.values=H,M,,L
