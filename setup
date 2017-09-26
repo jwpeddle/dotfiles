@@ -10,3 +10,4 @@ rm -rf ~/.i3status.conf && ln -s ~/dotfiles/i3status.conf ~/.i3status.conf
 rm -rf ~/.pdbrc.py && ln -s ~/dotfiles/pdbrc.py ~/.pdbrc.py
 rm -rf ~/.i3 && ln -s ~/dotfiles/i3 ~/.i3
 rm -rf ~/.taskrc && ln -s ~/dotfiles/taskrc ~/.taskrc
+rm -rf ~/.Xresources && ln -s ~/dotfiles/Xresources ~/.Xresources
