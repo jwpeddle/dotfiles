@@ -1,6 +1,7 @@
 rm -rf ~/.Xresources && ln -s ~/dotfiles/Xresources ~/.Xresources
 rm -rf ~/.ackrc && ln -s ~/dotfiles/ackrc ~/.ackrc
-rm -rf ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
+#rm -rf ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
+rm -rf ~/.config/fish/config.fish && ln -s ~/dotfiles/config.fish ~/.config/fish/config.fish
 rm -rf ~/.config/i3/config && ln -s ~/dotfiles/i3.config ~/.config/i3/config
 rm -rf ~/.config/i3status/config && ln -s ~/dotfiles/i3status.config ~/.config/i3status/config
 rm -rf ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
