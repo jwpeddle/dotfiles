@@ -1,13 +1,9 @@
+rm -rf ~/.Xresources && ln -s ~/dotfiles/Xresources ~/.Xresources
 rm -rf ~/.ackrc && ln -s ~/dotfiles/ackrc ~/.ackrc
-rm -rf ~/.bash_aliases && ln -s ~/dotfiles/bash_aliases ~/.bash_aliases
-rm -rf ~/.bash_colors && ln -s ~/dotfiles/bash_colors ~/.bash_colors
-rm -rf ~/.bash_profile && ln -s ~/dotfiles/bash_profile ~/.bash_profile
 rm -rf ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
+rm -rf ~/.config/i3/config && ln -s ~/dotfiles/i3.config ~/.config/i3/config
+rm -rf ~/.config/i3status/config && ln -s ~/dotfiles/i3status.config ~/.config/i3status/config
 rm -rf ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
+rm -rf ~/.pdbrc.py && ln -s ~/dotfiles/pdbrc.py ~/.pdbrc.py
 rm -rf ~/.xbindkeysrc && ln -s ~/dotfiles/xbindkeysrc ~/.xbindkeysrc
 rm -rf ~/.xinitrc && ln -s ~/dotfiles/xinitrc ~/.xinitrc
-rm -rf ~/.i3status.conf && ln -s ~/dotfiles/i3status.conf ~/.i3status.conf
-rm -rf ~/.pdbrc.py && ln -s ~/dotfiles/pdbrc.py ~/.pdbrc.py
-rm -rf ~/.i3 && ln -s ~/dotfiles/i3 ~/.i3
-rm -rf ~/.taskrc && ln -s ~/dotfiles/taskrc ~/.taskrc
-rm -rf ~/.Xresources && ln -s ~/dotfiles/Xresources ~/.Xresources

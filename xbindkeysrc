@@ -1,13 +1,19 @@
+#Brightness down
+"xbacklight -dec 5"
+   XF86MonBrightnessDown
+
+#Brightness up
+"xbacklight -inc 5"
+   XF86MonBrightnessUp
+
 # Increase volume
-"amixer set Master playback 1+"
-    m:0x0 + c:123
-    XF86AudioRaiseVolume
+"pamixer --increase 5"
+   XF86AudioRaiseVolume
 
 # Decrease volume
-"amixer set Master playback 1-"
-    m:0x0 + c:122
-    XF86AudioLowerVolume
+"pamixer --decrease 5"
+   XF86AudioLowerVolume
 
-"i3lock -i ~/background.png -t -u -e"
-    m:0x0 + c:160
-    XF86ScreenSaver
+# Mute
+"pamixer --toggle-mute"
+  XF86AudioMute
