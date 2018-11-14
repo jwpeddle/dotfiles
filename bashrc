@@ -8,7 +8,11 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/git:\1 /'
 }
 
-export PS1="\[$c197\]\$(git_branch)\[$c69\]\u@\h \[$c227\]\w \[$c0\]
+virtualenv_info() {
+    [[ -n "$VIRTUAL_ENV" ]] && echo "venv:${VIRTUAL_ENV##*/} "
+}
+
+export PS1="\[$Green\]\$(virtualenv_info)\[$Red\]\$(git_branch)\[$Magenta\]\u\[$White\]@\[$Blue\]\h \[$Yellow\]\w \[$C0\]
 \$ "
 
 # use most to page- pretty colors!
@@ -49,13 +53,14 @@ export PYTHONSTARTUP=~/.pystartup
 export PYTHONDONTWRITEBYTECODE=1
 export GOPATH=$HOME/dev/golang
 export ANDROID_HOME=$HOME/android-sdk
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+export XKB_DEFAULT_OPTIONS=ctrl:nocaps
 
 [[ -s /usr/bin/virtualenvwrapper.sh ]] && source /usr/bin/virtualenvwrapper.sh
 [[ -s /home/jason/vmfarms/vmpass/vmpass.sh ]] && source /home/jason/vmfarms/vmpass/vmpass.sh
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh --no-use
-alias node='unalias node ; unalias npm ; nvm use default ; node $@'
-alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
+[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
 
 PATH=/home/jason/.local/bin:$PATH
 PATH=/home/jason/scripts:$PATH

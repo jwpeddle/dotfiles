@@ -17,3 +17,7 @@
 # Mute
 "pamixer --toggle-mute"
   XF86AudioMute
+
+# Lock screen
+"i3lock -i /home/jason/.config/background.png -t -u -e"
+  Control + Alt + Delete
