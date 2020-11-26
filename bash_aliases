@@ -1,5 +1,5 @@
 alias ls='ls --color=auto'
 alias mkdir='mkdir -p -v'
 alias shutdown='shutdown -h now'
-alias vim='nvim'
+alias vim='echo "did you mean nvim?"'
 alias ack='echo "did you mean rg?"'
