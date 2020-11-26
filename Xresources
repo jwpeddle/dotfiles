@@ -8,4 +8,4 @@ rofi.location: 2
 rofi.separator-style: solid
 rofi.width: 100
 rofi.yoffset: 28
-Xcursor.theme: Vanilla-DMZ
+Xcursor.theme: Neutral
