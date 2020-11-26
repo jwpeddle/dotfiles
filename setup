@@ -5,10 +5,10 @@ rm -rf ~/.bash_profile && ln -s ~/dotfiles/bash_profile ~/.bash_profile
 rm -rf ~/.bashrc && ln -s ~/dotfiles/bashrc ~/.bashrc
 rm -rf ~/.config/i3/config && ln -s ~/dotfiles/i3.config ~/.config/i3/config
 rm -rf ~/.config/i3status/config && ln -s ~/dotfiles/i3status.config ~/.config/i3status/config
-rm -rf ~/.config/ripgrep/config && ln -s ~/dotfiles/ripgrep.config ~/.config/ripgrep/config
 rm -rf ~/.config/termite/config && ln -s ~/dotfiles/termite.config ~/.config/termite/config
 rm -rf ~/.gitconfig && ln -s ~/dotfiles/gitconfig ~/.gitconfig
 rm -rf ~/.pdbrc.py && ln -s ~/dotfiles/pdbrc.py ~/.pdbrc.py
 rm -rf ~/.profile && ln -s ~/dotfiles/profile ~/.profile
 rm -rf ~/.xbindkeysrc && ln -s ~/dotfiles/xbindkeysrc ~/.xbindkeysrc
 rm -rf ~/.xinitrc && ln -s ~/dotfiles/xinitrc ~/.xinitrc
+rm -rf ~/.config/ripgrep/config && ln -s ~/dotfiles/ripgrep.config ~/.config/ripgrep/config
